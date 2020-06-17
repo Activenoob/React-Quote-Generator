@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+/* .app {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #f8efef;
+  padding: auto;
+  gap: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quoteContainer {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 93vw;
+  max-width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: lightblue;
 }
 
-.App-link {
-  color: #61dafb;
+.quote {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.author {
+  text-align: right !important;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  width: 55%;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+  background-color: lightblue;
+}
+
+button {
+  align-items: center;
+} */
+
+.app {
+  /* background-color: #071b2f; */
+  height: 100vh;
+  background-color: #071b2f;
+
+
+  background-image:
+    linear-gradient(to top right,
+      #071b2f, #10232f);
+
+
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+.quoteContainer {
+  text-align: center;
+  color: azure;
+  max-width: 759px;
+  margin: 0 auto;
+
+
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+
+
+
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    opacity: 1;
   }
+}
+
+.quote {
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 27px;
+  font-weight: 600;
+}
+
+.author {
+  text-align: end;
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 480px) {
+  .author {
+    font-size: 23px;
+  }
+}
+
+button {
+  color: azure;
+
+  border: none;
+  max-width: 365px;
+
+  width: 50%;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(22, 175, 175);
 }
