@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Quote from './Quote';
-import getQuote from './getQuote'
+// import getQuote from './getQuote'
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
 
 
   useEffect(() => {
-    populateData();
+    populateData(); // eslint-disable-next-line
   }, []);
 
   const fetchQuotes = async () => {
